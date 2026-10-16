@@ -25,7 +25,7 @@
     "test:coverage": "vitest --run --coverage",
     "test:e2e": "playwright test --config tests/e2e/playwright.config.ts",
     "e2e:packages": "node scripts/e2e/install-packages.ts",
-    "e2e:server": "mkdir -p tests/e2e/.data/Data/modules/{{{moduleId}}} tests/e2e/.data/container_cache && docker compose -f tests/e2e/compose.yaml up --detach --wait",
+    "e2e:server": "mkdir -p tests/e2e/.data/Data/modules/test-module tests/e2e/.data/container_cache && docker compose -f tests/e2e/compose.yaml up --detach --wait",
     "e2e:server:stop": "docker compose -f tests/e2e/compose.yaml down",
     "test": "vitest --typecheck --run",
     "eslint": "eslint .",
