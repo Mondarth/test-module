@@ -77,7 +77,7 @@ jobs:
       - name: Start Foundry VTT
         run: |
           export FOUNDRY_UID="$(id -u)" FOUNDRY_GID="$(id -g)"
-          pnpm run e2e:server -wait-timeout 300
+          pnpm run e2e:server --wait-timeout 300
 
       - name: Run Playwright
         run: pnpm run test:e2e --project=${{ matrix.browser }}
