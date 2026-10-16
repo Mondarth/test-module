@@ -11,6 +11,8 @@ Tesign module
 
 A module for [Foundry VTT](https://foundryvtt.com) version 14 and later. Install it from the manifest URL:
 
+Minor change to test pull.
+
 ```
 https://github.com/Mondarth/test-module/releases/latest/download/module.json
 ```
